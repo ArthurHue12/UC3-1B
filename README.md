@@ -17,24 +17,6 @@ if (nome == "animar") {
 }
 ```
 ```js
-const produto = prompt("qual seu Rabibeiro preferido?");
-
-switch (produto) {
-  case "Rachide":
-    console.log("O Rachide custa R$500,50.");
-    break;
-  case "PedroBala":
-  case "IanPorto":
-    console.log("o PedroBala e o IanPorto, custam R$200,00.");
-    break;
-  case "Bily":
-    console.log("o Bily custa R$100,00 reais.");
-    break;
-  default:
-    console.log("infelizmente não temos esse Rabibis");
-}
-```
-```js
 const produto = prompt("Olá, Qual mangá você desejaria");
 
 switch (produto) {
