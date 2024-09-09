@@ -94,7 +94,109 @@ switch (frutas) {
     break;
 }
 ```
+```js
+const livros = [
+  "javascript Assertivo",
+  "Engenharia de Testes",
+  "Clean code",
+  "Scrum",
+  "Guia HTML5 e CSS3",
+  "MongoDB"
+];
+
+const atualizandoLivros = livros.splice(0, 0, "Node.Js");
+//(indice localização, n de elementos p/ deletar, adicionar)
+console.log(atualizandoLivros);
+
+console.log(livros);
+```
+```js
+const livros = [
+  "javascript Assertivo",
+  "Engenharia de Testes",
+  "Clean code",
+  "Scrum",
+  "Guia HTML5 e CSS3",
+  "MongoDB"
+];
+
+const tamanhoLivros = livros.length;
+
+const corredorA1 = livros.slice(0, tamanhoLivros / 3);
+
+const corredorA2 = livros.slice(tamanhoLivros / 3);
+
+console.log(`Os livros do corredor A1 são:`, corredorA1);
+console.log(`Os livros do corredor A2 são:`, corredorA2);
+```
+```js
+const livros = [
+  "javascript Assertivo",
+  "Engenharia de Testes",
+  "Clean code",
+  "Scrum",
+  "Guia HTML5 e CSS3",
+  "MongoDB"
+];
+
+const hqs = ["Batman", "Sonic IDW", "Avatar", "Homem Aranha", "Vingadores"];
+
+const mangá = ["Jujutsu Kaisen", "Mob Psycho", "One Piece", "Punpun"];
+
+const JuntarLivros = livros.concat(hqs, mangá);
+
+console.log(JuntarLivros);
+```
+```js
+const administrador = prompt(
+  "Seja Bem vindo administrador, por favor insira seu nome para confirmar sua identidade"
+);
+
+var Rachide = new Boolean(true);
+if (Rachide) {
+  console.log("Parabéns! Você se autenticou.");
+} else {
+  console.log("Você não está autenticado");
+}
+```
+```js
+const livros = [
+  "javascript Assertivo",
+  "Engenharia de Testes",
+  "Clean code",
+  "Scrum",
+  "Guia HTML5 e CSS3",
+  "MongoDB"
+];
+
+//.includes - retorna um valor booleano, pesquisa se é verdadeiro ou falso.
+//.indexof - trás a posição do índice
+
+console.log(livros.indexOf("Amandela"));
+//2
+
+console.log(livros.includes("Amandela"));
+// true
+```
 
 
 ## Atividades desenvolvidas
 Trabalho dos vídeos curtos
+
+Atividade Array:
+
+```js
+const mangá = ["JJK", "MobPsycho", "OnePiece"];
+const Hqs = mangá.concat(["SonicIDW", "Avatar"]);
+
+console.log(mangá); // ["JJK", "MobPsycho", "OnePiece"]
+console.log(Hqs); // ["JJK", "MobPsycho", "OnePiece", "SonicIDW", "Avatar"]
+
+const string = Hqs.join("-");
+
+console.log(string); // JJK-MobPsycho-OnePiece-SonicIDW-Avatar
+
+const index = Hqs.indexOf("MobPsycho");
+
+console.log(index); // MobPsycho
+```
