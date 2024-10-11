@@ -178,7 +178,75 @@ console.log(livros.indexOf("Amandela"));
 console.log(livros.includes("Amandela"));
 // true
 ```
+```js
+function soma(num1, num2) {
+  return num1 + num2;
+}
 
+console.log(soma(7, 2));
+
+const compra1 = prompt("Qual o valor da primeira compra?");
+const compra2 = prompt("Qual o valor da seguna compra?");
+
+if (compra1 > compra2) {
+  console.log(soma(compra1, compra2));
+} else if (compra1 < compra2) {
+  console.log(subtração(compra1, compra2));
+} else {
+  console.log("Error");
+}
+
+const Mês = prompt("Digite um Mês para saber seu feriado nacional");
+
+switch (Mês) {
+  case "Janeiro":
+    window.alert("Confraternização Universal");
+    break;
+  case "Fevereiro":
+    window.alert("Carnaval");
+    break;
+  case "Março":
+    window.alert("Paixão de Cristo");
+    break;
+  case "Abril":
+    window.alert("Tiradentes");
+    break;
+  case "Maio":
+    window.alert("Corpus Christi");
+    break;
+  case "Junho":
+    window.alert("São João");
+    break;
+  case "Julho":
+    window.alert("Revolução Constitucionalista");
+    break;
+  case "Agosto":
+    window.alert("Assunção de Nossa Senhora");
+    break;
+  case "Setembro":
+    window.alert("Dia da Independência do Brasil");
+    break;
+  case "Outubro":
+    window.alert("Nossa Senhora Aparecida");
+    break;
+  case "Novembro":
+    window.alert("Consciência Negra");
+    break;
+  case "Dezembro":
+    window.alert("Natal");
+    break;
+}
+```
+```js
+var PersonagensDeTrigun = ["Vash", "Nicholas", "Meryl", "Mily", "Kuroneko"];
+PersonagensDeTrigun.sort();
+console.log(PersonagensDeTrigun);
+
+var PersonagensDeTrigun = ["Vash", "Nicholas", "Meryl", "Mily", "Kuroneko"];
+var ultimo = PersonagensDeTrigun.pop(); // remove Kuroneko (do final)
+// ["Vash", "Nicholas", "Meryl", "Mily"];
+console.log(PersonagensDeTrigun);
+```
 
 ## Atividades desenvolvidas
 Trabalho dos vídeos curtos
@@ -199,4 +267,36 @@ console.log(string); // JJK-MobPsycho-OnePiece-SonicIDW-Avatar
 const index = Hqs.indexOf("MobPsycho");
 
 console.log(index); // MobPsycho
+```
+### Jogo
+
+```js
+const movimento = prompt(
+  "2 inimigos estão com armas apontadas na sua direção, qual seu proximo movimento? A: Correr em direção aos inimigos com a katana. B: Desviar dos tiros e atacar. C: Tentar defender com a katana."
+);
+
+if (movimento == "C") {
+  console.log(
+    "Você conseguiu defender as 2 balas e finalizou os inimigos, você passou de nível. Proximo nível: https://codepen.io/HueHue-the-animator/pen/KKOKMag "
+  );
+} else if ("A") {
+  console.log("Você avançou e levou 2 tiros dos inimigos, você morreu");
+} else if ("B") {
+  console.log("Você desviou e lançou sua katana");
+  console.log("Você tentou esquivar e levou um dos tiros, você morreu");
+}
+```
+```js
+const refém = prompt(
+  "Você acha um inimigo e ele está com um refém, oque você faz? A: Você lança a katana na direção deles. B: Parar o tempo e ataca-lo por trás. C: Fazer nada"
+);
+if (refém == "Parar o tempo e ataca-lo por trás") {
+  console.log(
+    "Por mais que isso gastou muita energia, você conseguiu eliminar ele sem matar o refém, você passou de nível"
+  );
+} else if ("Você lança a katana na direção deles") {
+  console.log("Você acaba acertando os dois, você falhou");
+} else {
+  console.log("Você observa ele e ele mata o refém, você falhou");
+}
 ```
