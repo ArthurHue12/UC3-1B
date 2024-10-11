@@ -3,6 +3,7 @@ Boas vindas! Este é seu caderno virtual. Aqui você deverá guardar todos os co
 
 
 ## Conteúdo Técnico
+
 ```js
 const nome = "Alberto";
 console.log(nome);
