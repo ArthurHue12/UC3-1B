@@ -249,9 +249,13 @@ console.log(PersonagensDeTrigun);
 ```
 
 ## Atividades desenvolvidas
-Trabalho dos vídeos curtos
+### Trabalho dos vídeos curtos
 
-Atividade Array:
+https://youtube.com/shorts/-iGJWEY0PwA?feature=share
+
+https://youtube.com/shorts/2pP3n6PEUt4?feature=share
+
+### Atividade Array:
 
 ```js
 const mangá = ["JJK", "MobPsycho", "OnePiece"];
